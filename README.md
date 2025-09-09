@@ -12,3 +12,7 @@ Academic Manager dashboard
 LectureDashboard is where claims are made 
 Coordinator Dashboard is where claims are preapproved
 Academic Manager dashboarh is where claims are approved
+
+
+# For more information 
+Contact ST10440580@rcconnect.edu.za
