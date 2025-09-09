@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "TrackClaims";
+}
+
+
+<link rel="stylesheet" href="~/css/indexstyling.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<h2>Track Claims</h2>
+
+<table class="claims-table">
+    <thead>
+        <tr>
+            <th>Month</th>
+            <th>Module</th>
+            <th>Hours</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>January</td>
+            <td>Programming 101</td>
+            <td>20</td>
+            <td>R 5000</td>
+            <td>Submitted</td>
+            <td>
+                <button>Cancel</button>
+                <button>Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>Database Systems</td>
+            <td>15</td>
+            <td>R 4000</td>
+            <td>Approved</td>
+            <td>
+                <button disabled>Cancel</button>
+                <button disabled>Edit</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

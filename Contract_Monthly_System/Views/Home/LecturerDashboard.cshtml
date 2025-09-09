@@ -1,0 +1,41 @@
+﻿@model Contract_Monthly_System.Models.LectureViewer
+
+<link rel="stylesheet" href="~/css/indexstyling.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-container">
+        <h2>Welcome to the Lecturer Dashboard @ViewBag.userFullName</h2>
+
+        <div class="dashboard-actions">
+            <p>Submit a new claim:</p>
+            <button class="btn-action">Submit Claim</button>
+            <button class="btn-action">Upload Supporting Documents</button>
+        </div>
+
+        <h3>My Claims</h3>
+        <table class="claims-table">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Module</th>
+                    <th>Hours</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var claim in Model.Claims)
+                {
+                    <tr>
+                        <td>@claim.Month</td>
+                        <td>@claim.Module</td>
+                        <td>@claim.Hours</td>
+                        <td>R @claim.Total.ToString("N2")</td>
+                        <td>@claim.State</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

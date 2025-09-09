@@ -1,0 +1,196 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/images/background.jpeg'); /* path to your image */
+    background-size: cover; /* makes it cover the whole screen */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-position: center; /* centers the image */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+h3{
+    font-family:Broadway;
+}
+.Welcome {
+    color: black;
+    font-family:Broadway
+}
+
+.explain {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 10px 7px 10px;
+    font-size: 1.05rem;
+}
+
+    .explain h5 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 4px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 25px; /* rounder for a pill look */
+    background: linear-gradient(45deg, blue, aqua); /* gradient background */
+    color: white; /* text color */
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    .nav-item a:hover {
+        background: white; /* hover with another gradient */
+        transform: scale(1.05);
+    }
+
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    color: blue;
+}
+    h5 {
+    font-family:Bahnschrift;
+    font-size: 22px !important;
+    font-weight: bold;
+    color: grey;
+    align-content:center;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 50px;
+    border-radius: 200px;
+    margin: 55px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    button:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+    }
+
+
+.center-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+    .header {
+    background: radial-gradient(aqua,blue);
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+    .header h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: bold;
+    }
+
+
+.login {
+    background: radial-gradient(aqua,blue);
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    font-family: Broadway
+}
+
+
+.register {
+    background: radial-gradient(aqua,blue);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    font-family: Broadway
+}
+
+
+.dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+    padding: 40px 20px;
+}
+
+
+.dashboard-container {
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+
+.dashboard-actions {
+    margin-bottom: 25px;
+}
+
+.btn-action {
+    text-decoration: none;
+    padding: 5px;
+    background: linear-gradient(45deg, aqua); /* gradient background */
+    color: white; /* text color */
+}
+
+    .btn-action:hover {
+        background: white;
+        transform: scale(1.05);
+    }
+
+
+.claims-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .claims-table th,
+    .claims-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .claims-table th {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+    }
+
+    .claims-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 40px auto; 
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+

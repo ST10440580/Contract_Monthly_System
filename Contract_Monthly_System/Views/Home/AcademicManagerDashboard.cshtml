@@ -1,0 +1,60 @@
+﻿@model List<AcademicManager>
+
+
+<link rel="stylesheet" href="~/css/indexstyling.css" />
+
+<section>
+    <h1>Welcome to the Academic Dashboard {userFullName}</h1>
+
+
+    <a href="/Home/Approve/">Approve Claims </a>
+    <div class="card">
+        <h2>Claims Queue</h2>
+        <div class="filters">
+            <label>Month <input type="month" /></label>
+            <label>AcademicManager <input type="text" /></label>
+            <label>
+                State
+                <select>
+                    <option>Submitted</option>
+                    <option>Verified</option>
+                    <option>Approved</option>
+                    <option>Rejected</option>
+                </select>
+            </label>
+            <button type="button">Apply Filters</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>AcademicManager</th>
+                    <th>Module Name</th>
+                    <th>Month</th>
+                    <th>Total</th>
+                    <th>State</th>
+                    <th>Actions</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.AcademicManagerName</td>
+                        <td>@item.ModuleName</td>
+                        <td>@item.Month</td>
+                        <td>R @item.Total.ToString("N2")</td>
+                        <td>@item.State</td>
+                        <td>
+                            <button type="button">Verify</button>
+                            <button type="button">Approve</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
