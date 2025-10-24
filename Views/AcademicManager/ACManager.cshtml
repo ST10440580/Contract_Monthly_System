@@ -1,0 +1,16 @@
+﻿@model List<AcademicManager>
+
+
+<link rel="stylesheet" href="~/css/indexstyling.css" />
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-container">
+        <h2>Welcome to the Academic Manager Dashbaord</h2>
+
+
+        <<<div class="dashboard-actions">
+            <p>Review Claims:</p>
+            <a href="@Url.Action("ApproveClaims", "AcademicManager")" class="btn-action">
+                Approve Claims
+            </a>
+        </div>

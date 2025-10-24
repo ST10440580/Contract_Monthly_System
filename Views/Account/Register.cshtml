@@ -1,0 +1,65 @@
+﻿@model Contract_Monthly_System.Models.User
+
+@{
+    ViewData["Title"] = "Register";
+}
+<!--asp append was used as tag helper so the framework always pulls the right version and clears cache(without this, changes couldnt be made to this specific view hence I used it-->
+<link rel="stylesheet" href="~/css/indexstyling.css" asp-append-version="true" />
+
+<div class="register">
+    <h2>Register</h2>
+</div>
+
+<form asp-action="Register" method="post">
+
+
+
+    <div class="form-group">
+        <label asp-for="UserFullName">Enter Name</label>
+        <input asp-for="UserFullName" type="fname" class="form-control" />
+    </div>
+
+
+
+    <div class="form-group">
+        <label asp-for="Email">Enter Email</label>
+        <input asp-for="Email" type="email" class="form-control" />
+    </div>
+
+
+
+    <div class="form-group">
+        <label asp-for="Password">Enter password</label>
+        <input asp-for="Password" type="password" class="form-control" />
+    </div>
+
+
+
+
+    <div class="form-group">
+        <label asp-for="Password">Confirm Password</label>
+        <input asp-for="Password" type="password" class="form-control" />
+    </div>
+
+
+
+    <div class="form-group">
+        <label asp-for="Role"></label>
+        <select asp-for="Role" class="form-control">
+            <option value="Lecturer">Lecturer</option>
+            <option value="Coordinator">Programme Coordinator</option>
+            <option value="AcademicManager">Academic Manager</option>
+        </select>
+    </div>
+
+    <button type="submit" class="proceed">Sign Up</button>
+
+    Already have an account?
+    <a class="btn btn-link" asp-controller="Account" asp-action="Login">Sign In</a>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert">@ViewBag.Error</div>
+    }
+
+</form>

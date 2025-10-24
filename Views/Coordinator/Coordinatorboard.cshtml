@@ -1,0 +1,15 @@
+﻿@model List<Contract_Monthly_System.Models.Claim>
+
+
+<link rel="stylesheet" href="~/css/indexstyling.css" />
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-container">
+        <h2>Welcome to the Programme Coordinator Dashboard @ViewBag.userFullName</h2>
+
+        <div class="dashboard-actions">
+            <a asp-action="Review" asp-controller="Coordinator" class="btn-action">Review Claims</a>
+
+        </div>
+    </div>
+</div>

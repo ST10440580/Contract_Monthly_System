@@ -1,0 +1,67 @@
+﻿@model List<Contract_Monthly_System.Models.Claim>
+
+<h2>Academic Manager Dashboard</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Lecturer</th>
+                <th>Month</th>
+                <th>Module</th>
+                <th>Hours</th>
+                <th>Rate</th>
+                <th>Notes</th>
+                <th>Status</th>
+                <th>Supporting Document</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var claim in Model)
+            {
+                <tr>
+                    <td>@claim.LecturerName</td>
+                    <td>@claim.Month</td>
+                    <td>@claim.Module</td>
+                    <td>@claim.HoursWorked</td>
+                    <td>@claim.HourlyRate</td>
+                    <td>@claim.Notes</td>
+                    <td>@claim.State</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(claim.SupportingDocumentPath))
+                        {
+                            <a href="~/@claim.SupportingDocumentPath" target="_blank">View</a>
+                        }
+                        else
+                        {
+                            <span>No document</span>
+                        }
+                    </td>
+                    <td>@claim.Total</td>
+                    <td>
+                        <div class="d-flex flex-column gap-1">
+                            <form asp-controller="AcademicManager" asp-action="Verify" method="post">
+                                <input type="hidden" name="id" value="@claim.ClaimId" />
+                                <button type="submit" class="btn btn-success btn-sm">Verify</button>
+                            </form>
+
+                            <form asp-controller="AcademicManager" asp-action="Reject" method="post">
+                                <input type="hidden" name="id" value="@claim.ClaimId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="AcademicManager" asp-action="FinalizedClaims" class="btn btn-info mt-3">View Finalized Claims</a>
+}
+else
+{
+    <p>No claims to review.</p>
+}

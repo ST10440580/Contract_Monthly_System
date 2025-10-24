@@ -1,0 +1,8 @@
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Contract_Monthly_System.Tests
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Contract_Monthly_System.Tests
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\obj\Debug\net8.0\Contract_Monthly_System.Tests.csproj.AssemblyReference.cache
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\obj\Debug\net8.0\Contract_Monthly_System.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\obj\Debug\net8.0\Contract_Monthly_System.Tests.AssemblyInfoInputs.cache
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\obj\Debug\net8.0\Contract_Monthly_System.Tests.AssemblyInfo.cs
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\obj\Debug\net8.0\Contract_Monthly_System.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\Pictures\Contract_Monthly_System\Contract_Monthly_System\Contract_Monthly_System.Tests\obj\Debug\net8.0\Contract_Monthly_System.Tests.sourcelink.json
