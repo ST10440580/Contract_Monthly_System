@@ -7,8 +7,9 @@ Login and Register
 LecturerDashboard 
 Coordinator Dashboard
 Academic Manager dashboard
+Finalized Document
 
-# Functions 
+# Functions :All buttons are now functional
 LectureDashboard is where claims are made 
 Coordinator Dashboard is where claims are preapproved
 Academic Manager dashboarh is where claims are approved
